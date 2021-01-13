@@ -22,9 +22,11 @@ void Sort(int arr[ROWS][COLS], const int m, const int n);
 
 int Sum(int arr[], const int n);
 double Sum(double arr[], const int n);
+int Sum(int arr[ROWS][COLS], const int m, const int);
 
 double Avg(int arr[], const int n);
 double Avg(double arr[], const int n);
+double Avg(int arr[ROWS][COLS], const int m, const int n);
 
 #define delimiter "\n--------------------------------------------------------------------------\n"
 
@@ -41,6 +43,10 @@ void main()
 	int i_arr[n];
 	Fillrand(i_arr, n);
 	Print(i_arr, n);
+	cout << "Сумма эллементов массива" << Sum(i_arr2, rows, cols) << endl;
+	cout << "Среднее арефметическое" << Avg(i_arr2, ROWS, COLS) << endl;
+	cout << "Отсортированный массив" << endl;
+	
 	Sort(i_arr, n);
 	Print(i_arr, n);
 	
@@ -202,6 +208,17 @@ void main()
 	 return Sum;
 
   }
+  int Sum(int arr[ROWS][COLS], const int m, const int)
+  {
+	  int sum = 0;
+	  for (int i = 0; i < m; i++)
+	  {
+		  for (int j = 0; j < n; j++)
+		  {
+			  sum += arr[i][j];
+		  }
+	  }return sum;
+  }
   double Avg(int arr[], const int n)
   {
 	  return(double)Sum(arr, n) / n;
@@ -212,4 +229,7 @@ void main()
 	  return Sum(arr, n) / n;
   }
   
+  {
+	  int sum = 0;
+  }
  
