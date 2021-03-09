@@ -10,35 +10,25 @@ void Filrand(double arr[], const int n);
 void Filrand(int arr[ROWS][COLS], const int m, const int n);
 
 //выводит массив на экран
-template<typename T>
-void Print(T arr[], const int n);
-template<typename T>
-void Print(T arr[ROWS][COLS], const int m, const int n);
+template<typename T>void Print(T arr[], const int n);
+template<typename T>void Print(T arr[ROWS][COLS], const int m, const int n);
 
 //сортирует массив
-template<typename T>
-void Sort(T arr[], const int n);
-template<typename T>
-void Sort(T arr[ROWS][COLS], const int m, const int n);
+template<typename T>void Sort(T arr[], const int n);
+template<typename T>void Sort(T arr[ROWS][COLS], const int m, const int n);
 
 //возвращает сумму элементов массива
-template<typename T>
-T Sum(T arr[], const int n);
+template<typename T>T Sum(T arr[], const int n);
 
 //возвращает среднее арифметическое элементов массива
-template<typename T>
-double Avg(T arr[], const int n);
-
+template<typename T>double Avg(T arr[], const int n);
 
 
 //возвращает минимальное значение, которое есть в массиве
-template<typename T>
-T minValue(T arr[], const int n);
-
+template<typename T>T minValue(T arr[], const int n);
 
 //возвращает максимальное значение, которое есть в массиве
-template<typename T>
-T maxValue(T arr[], const int n);
+template<typename T>T maxValue(T arr[], const int n);
 
 
 
@@ -133,8 +123,7 @@ void Print(T arr[ROWS][COLS], const int m, const int n)
 	}
 }
 
-template<typename T>
-void Sort(T arr[], const int n)
+template<typename T>void Sort(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -150,8 +139,7 @@ void Sort(T arr[], const int n)
 		}
 	}
 }
-template<typename T>
-void Sort(T arr[ROWS][COLS], const int m, const int n)
+template<typename T>void Sort(T arr[ROWS][COLS], const int m, const int n)
 {
 	for (int i = 0; i < m; i++)
 	{
@@ -177,8 +165,7 @@ void Sort(T arr[ROWS][COLS], const int m, const int n)
 
 	}
 }
-template<typename T>
-T Sum(T arr[], const int n)
+template<typename T>T Sum(T arr[], const int n)
 {
 	T Sum = 0;
 	for (int i = 0; i < n; i++)
@@ -187,13 +174,11 @@ T Sum(T arr[], const int n)
 	}
 	return Sum;
 }
-template<typename T>
-double Avg(T arr[], const int n)
+template<typename T>double Avg(T arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
-template<typename T>
-T minValue(T arr[], const int n)
+template<typename T>T minValue(T arr[], const int n)
 {
 	T min = arr[0];
 	for (int i = 0; i < n; i++)
@@ -206,8 +191,7 @@ T minValue(T arr[], const int n)
 	return min;
 }
 
-template<typename T>
-T maxValue(T arr[], const int n)
+template<typename T>T maxValue(T arr[], const int n)
 {
 	T max = arr[0];
 	for (int i = 0; i < n; i++)
