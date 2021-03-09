@@ -1,7 +1,7 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
-int add(int a, int b, int c); //Прототип функций(Function declaration-объявление функций)
+int add(int a, int b, int c); //РџСЂРѕС‚РѕС‚РёРї С„СѓРЅРєС†РёР№(Function declaration-РѕР±СЉСЏРІР»РµРЅРёРµ С„СѓРЅРєС†РёР№)
 int sub(int a, int b);
 int mul(int a, int b);
 int my_div(int a, int b);
@@ -12,8 +12,8 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 	int num1, num2;
-	cout << "Введите два числа"; cin >> num1 >> num2;
-	int c = add(num1, num2,5);   //Вызов функций(Function call)
+	cout << "Р’РІРµРґРёС‚Рµ РґРІР° С‡РёСЃР»Р°"; cin >> num1 >> num2;
+	int c = add(num1, num2,5);   //Р’С‹Р·РѕРІ С„СѓРЅРєС†РёР№(Function call)
 	cout << c << endl;
 	cout << sub(num1, num2) << endl;
 	cout << mul(num1, num2) << endl;
@@ -25,7 +25,7 @@ void main()
 }
 
 
-	int add(int a, int b, int c) //Реализация функций(Function definition-определение функций)
+	int add(int a, int b, int c) //Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёР№(Function definition-РѕРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёР№)
 	{
 		int sum = a + b;
 		return sum;
