@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Fillrand.cpp" />
     <ClCompile Include="Functions.cpp" />
-    <ClCompile Include="cource.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="Print.cpp" />
     <ClCompile Include="Sort.cpp" />
   </ItemGroup>
